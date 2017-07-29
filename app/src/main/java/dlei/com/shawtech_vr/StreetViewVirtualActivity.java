@@ -33,7 +33,7 @@ public class StreetViewVirtualActivity extends AppCompatActivity {
         AssetManager assetManager = getAssets();
 
         try {
-            inputStream = assetManager.open("s.jpg");
+            inputStream = assetManager.open("panorama.jpg");
             options.inputType = VrPanoramaView.Options.TYPE_MONO;
             mVrPanoramaView.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
             inputStream.close();
