@@ -14,16 +14,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button enterButton = (Button) findViewById(R.id.enterButton);
+        Button devButton = (Button) findViewById(R.id.devsButton);
+
+        devButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(v.getContext(), StreetViewVirtualActivity.class);
+                        i.putExtra("remote_image", "NO");
+                        startActivity(i);
+                    }
+                }
+        );
 
         enterButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(v.getContext(), StreetViewVirtualActivity.class);
+                        i.putExtra("remote_image", "YES");
                         startActivity(i);
                     }
                 }
         );
+
+
 
 
     }

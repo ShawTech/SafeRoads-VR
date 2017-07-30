@@ -44,7 +44,9 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".StreetViewPanoramaActivity" />
-        <activity android:name=".StreetViewVirtualActivity"></activity>
+        <activity android:name=".StreetViewVirtualActivity"
+            android:screenOrientation="landscape">
+        </activity>
     </application>
 
 </manifest>

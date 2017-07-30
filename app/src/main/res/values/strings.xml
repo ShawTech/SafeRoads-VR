@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">shawtech_vr</string>
+    <string name="app_name">ShawTech: Saferoads VR</string>
     <string name="title_activity_maps">Map</string>
     <string name="enter_string">Enter ShawTech Vr</string>
+    <string name="view_devs_string">View the devs</string>
+
     <string name="title_activity_street_view_panorama">StreetViewPanoramaActivity</string>
 </resources>
